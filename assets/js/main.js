@@ -117,6 +117,7 @@
 		});
 
 		function animated_swiper(selector, init) {
+			 if (!init || typeof init.on !== 'function') return;
 			let animated = function animated() {
 				$(selector + " [data-animation]").each(function () {
 					let anim = $(this).data("animation");
