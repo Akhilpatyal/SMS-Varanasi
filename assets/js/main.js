@@ -249,6 +249,10 @@
 	var swiper = new Swiper('.course__slider', {
 		spaceBetween: 30,
 		slidesPerView: 2,
+		loop:true,
+		autoplay: {
+		  delay: 3000,
+		},
 		breakpoints: {  
 			'768': {
 				slidesPerView: 2,
