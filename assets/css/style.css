@@ -1114,7 +1114,7 @@ input[type=color] {
 }
 
 .breadcrumb__title-2 {
-  font-size: 50px;
+  font-size: 35px;
   line-height: 1.1;
   margin-top: 12px;
 }
@@ -5221,7 +5221,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   font-weight: 400;
   color: var(--tp-text-3);
   font-size: 15px;
-  line-height: 1;
+  /* line-height: 1; */
 }
 
 .course__video-info h5 span {
@@ -12134,4 +12134,183 @@ only screen and (min-width: 576px) and (max-width: 767px),
   height: 100%;
   background: linear-gradient(to top,rgba(128, 0, 0, 0.6),rgba(128, 0, 0, 0.4));
   pointer-events: none;
+}
+/* Shape */
+.ed-title-shape svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.ed-course-shape {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    z-index: 0;
+    
+}
+.ed-course-shape img{
+  height: 150px;
+  opacity: 0.3;
+}
+.tableSection .tableContainer {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  padding: 12px 25px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  .tableSection .tableContainer {
+    padding: 12px 12px;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 10px 10px;
+
+}
+
+td,
+th {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Zebra striping */
+/* tr:nth-of-type(odd) { 
+  background: #16a085; 
+} */
+thead {
+    background: linear-gradient(329deg, #9a0019, #000000 90%);
+  color: white;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+tbody{
+background: linear-gradient(329deg, #9a0019, #000000 90%);
+}
+
+thead tr th:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+
+thead tr th:nth-child(3) {
+  border-top-right-radius: 10px;
+}
+
+th {
+  font-size: larger;
+
+  font-weight: 200;
+}
+
+td {
+  font-size: large;
+
+  font-weight: 100;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Left glowing line */
+.tableContainer::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 90%;
+  width: 4px;
+  height: 120px;
+   background: linear-gradient(329deg, #9a0019, #000000 90%);
+  opacity: 0;
+  transition: top 0.8s ease, opacity 0.8s ease;
+  z-index: 1;
+}
+
+/* Right glowing line */
+.tableContainer::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 90%;
+  width: 4px;
+  height: 180px;
+  background: linear-gradient(329deg, #9a0019, #000000 90%);
+  opacity: 0;
+  transition: top 0.8s ease, opacity 0.8s ease;
+  z-index: 1;
+}
+
+.tableContainer:hover::after,
+.tableContainer:hover::before {
+  top: 25%;
+  opacity: 1;
+}
+
+/* background effect  */
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background: linear-gradient(329deg, #9a0019, #000000 90%);
+  opacity: 0.4;
+  /* adjust as needed */
+  z-index: 0;
+  pointer-events: none;
+  /* so it doesn't block any content */
+  border-radius: inherit;
+}
+
+.tableSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+/* scroller */
+.table-responsive {
+  overflow-x: auto;
+  max-height: 400px;
+  /* or whatever fits best */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.table-responsive table {
+  min-width: 600px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-responsive th,
+.table-responsive td {
+  padding: 12px;
+  border: 1px solid #fff3;
+  border-left: none;
+  border-top: none;
+  text-align: center;
+}
+.gradient-one{
+  background: linear-gradient(329deg, #9a0019, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.course__sidebar {
+  position: sticky;
+  top: 100px;   /* adjust according to your header height */
 }
