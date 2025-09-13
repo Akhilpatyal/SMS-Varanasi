@@ -12790,9 +12790,6 @@ font-weight: bold;
 .stats-bg
 {
   margin-top: 2px;
-  background: url(/assets/img/stats-bg.jpg);
-  background-repeat: no-repeat;
-  background-color: #895122;
 }
  .stats h2
  {
@@ -12807,7 +12804,7 @@ font-weight: bold;
 .stats p
 {
     font-size: 18px;
-border-bottom: 2px solid #9b0909;
+border-bottom: 2px solid #ffffff;
 padding-bottom: 20px;
 width: 100%;
 text-align: center;
