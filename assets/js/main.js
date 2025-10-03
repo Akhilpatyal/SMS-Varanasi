@@ -246,6 +246,52 @@
 
 
 	// course slider
+	var swiper = new Swiper('.teachers__slider', {
+		spaceBetween: 30,
+		slidesPerView: 2,
+		loop:true,
+		autoplay: {
+		  delay: 3000,
+		},
+		breakpoints: {  
+			'768': {
+				slidesPerView: 4,
+			},
+			'576': {
+				slidesPerView: 2,
+			},
+			'0': {
+				slidesPerView: 1,
+			},
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+	var swiper = new Swiper('.Rank__slider', {
+		spaceBetween: 30,
+		slidesPerView: 2,
+		loop:true,
+		autoplay: {
+		  delay: 3000,
+		},
+		breakpoints: {  
+			'768': {
+				slidesPerView: 3,
+			},
+			'576': {
+				slidesPerView: 1,
+			},
+			'0': {
+				slidesPerView: 1,
+			},
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
 	var swiper = new Swiper('.course__slider', {
 		spaceBetween: 30,
 		slidesPerView: 2,
