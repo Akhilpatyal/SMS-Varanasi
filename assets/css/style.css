@@ -13903,7 +13903,11 @@ h1 a {
   line-height: 52px;
   color: white;
 }
-
+@media (max-width:550px) {
+  .apbc-headline h1 {
+    font-size: 41px!important;
+  }
+}
 .apbc-pera-txt,
 .apbc-pera-txt h2 {
   color: #ffffff;
