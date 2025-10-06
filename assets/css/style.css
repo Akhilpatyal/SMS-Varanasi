@@ -1181,11 +1181,7 @@ input[type=color] {
 }
 
 .breadcrumb__area {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-    url('./assets/img/campus/mca.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
 }
 
 /* .breadcrumb__overlay::after {
