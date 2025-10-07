@@ -323,6 +323,30 @@
       clickable: true,
     },
   });
+    var swiper = new Swiper(".student__slider", {
+    spaceBetween: 30,
+    slidesPerView: 2,
+    loop: true,
+    speed:2000,
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
   var swiper = new Swiper(".course__slider", {
     spaceBetween: 30,
     slidesPerView: 2,
@@ -508,4 +532,6 @@
       .find(".hover__active")
       .removeClass("active");
   });
+
+
 })(jQuery);

@@ -14704,3 +14704,85 @@ h1 a {
 .pn-10{
   padding-bottom: 10px;
 }
+
+/* counter */
+.stack {
+	width: 85%;
+	max-width: 400px;
+	transition: .25s ease;
+	&:hover {			
+		transform: rotate(5deg);
+		.card:before {
+			transform: translatey(-2%) rotate(-4deg);
+		}	
+		.card:after {
+			transform: translatey(2%) rotate(4deg);
+		}
+	}
+}
+
+.stack .card {
+	aspect-ratio: 3 / 2;
+	border: 4px solid;
+	background-color: #FFF;
+	position: relative;
+	transition: .15s ease;
+	cursor: pointer;
+	padding: 5% 5% 15% 5%;
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		border: 4px solid;
+		background-color: #FFF;
+		transform-origin: center center;
+		z-index: -1;
+		transition: .15s ease;
+		top: 0;
+		left: 0;
+	}
+	
+	&:before {
+		transform: translatey(-2%) rotate(-6deg);
+	}
+	
+	&:after {
+		transform: translatey(2%) rotate(6deg);
+	}
+	
+
+	
+}
+	.stack .card .image {
+		width: 100%;
+		border: 4px solid;
+		background-color: #EEE;
+		aspect-ratio: 1 / 1;
+		position: relative;
+	}
+
+.browser-warning {
+	margin-bottom: 4rem;
+}
+
+@supports (aspect-ratio: 1 / 1) {
+	.browser-warning {
+		display: none;
+	}
+}
+
+
+/* mentor cards */
+.swiper-slide .p-4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.swiper-slide:hover .p-4 {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+.seri-f{
+  font-family: serif;
+    font-size: 35px;
+}
