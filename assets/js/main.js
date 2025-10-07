@@ -533,5 +533,10 @@
       .removeClass("active");
   });
 
+$("#js-rotating").Morphext({
+  animation: "flipInX",
+  speed: 4000,
+});
+
 
 })(jQuery);
