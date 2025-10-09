@@ -253,7 +253,6 @@
     },
   });
 
-  
   $(document).ready(function () {
     $(".testimonial__active-3").owlCarousel({
       loop: true,
@@ -323,11 +322,11 @@
       clickable: true,
     },
   });
-    var swiper = new Swiper(".student__slider", {
+  var swiper = new Swiper(".student__slider", {
     spaceBetween: 30,
     slidesPerView: 2,
     loop: true,
-    speed:2000,
+    speed: 2000,
     autoplay: {
       delay: 3000,
     },
@@ -532,11 +531,80 @@
       .find(".hover__active")
       .removeClass("active");
   });
-
-$("#js-rotating").Morphext({
-  animation: "flipInX",
-  speed: 4000,
-});
-
-
+ 
 })(jQuery);
+//chart
+Highcharts.chart('placementChart', {
+    title: {
+        text: 'Average Salary Package'
+    },
+
+    accessibility: {
+        point: {
+            valueDescriptionFormat:
+                '{xDescription}{separator}{value} million(s)'
+        }
+    },
+
+    xAxis: {
+        title: {
+            text: 'Year'
+        },
+        categories: [1995, 2000, 2005, 2010, 2015, 2020, 2023]
+    },
+
+    yAxis: {
+        type: 'logarithmic',
+        title: {
+            text: 'Number of Internet Users (in millions)'
+        }
+    },
+
+    tooltip: {
+        headerFormat: '<b>{series.name}</b><br />',
+        pointFormat: '{point.y} million(s)'
+    },
+
+    series: [{
+        name: 'Internet Users',
+        data: [16, 361, 1018, 2025, 3192, 4673, 5200],
+        color: 'var(--highcharts-color-1, #2caffe)'
+    }]
+});
+Highcharts.chart('placementChart2', {
+    title: {
+        text: 'Highest Salary Package'
+    },
+
+    accessibility: {
+        point: {
+            valueDescriptionFormat:
+                '{xDescription}{separator}{value} million(s)'
+        }
+    },
+
+    xAxis: {
+        title: {
+            text: 'Year'
+        },
+        categories: [1995, 2000, 2005, 2010, 2015, 2020, 2023]
+    },
+
+    yAxis: {
+        type: 'logarithmic',
+        title: {
+            text: 'Number of Internet Users (in millions)'
+        }
+    },
+
+    tooltip: {
+        headerFormat: '<b>{series.name}</b><br />',
+        pointFormat: '{point.y} million(s)'
+    },
+
+    series: [{
+        name: 'Internet Users',
+        data: [16, 361, 1018, 2025, 3192, 4673, 5200],
+        color: 'var(--highcharts-color-1, #2caffe)'
+    }]
+});
