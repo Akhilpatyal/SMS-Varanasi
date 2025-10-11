@@ -608,3 +608,6 @@ Highcharts.chart('placementChart2', {
         color: 'var(--highcharts-color-1, #2caffe)'
     }]
 });
+
+
+AOS.init();
