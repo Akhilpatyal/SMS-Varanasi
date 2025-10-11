@@ -15240,7 +15240,7 @@ padding-top: 50px;
     gap: 19px;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .cities-item {
   border-radius: 16px;
