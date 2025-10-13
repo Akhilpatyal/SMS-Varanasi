@@ -274,6 +274,27 @@
       },
     });
   });
+   $(document).ready(function () {
+    $(".testimonial__active-4").owlCarousel({
+      loop: true,
+      margin: 30,
+      items: 6,
+      nav: false,
+      dots: true,
+      smartSpeed: 800, // smooth transition speed
+      autoplay: true, // enable autoplay
+      autoplayTimeout: 3000, // 3 seconds delay between slides
+      autoplayHoverPause: true, // pause on hover
+      animateOut: "fadeOutRight",
+      animateIn: "fadeInRight",
+      responsive: {
+        0: { items: 1 },
+        767: { items: 2 },
+        992: { items: 3 },
+        1200: { items: 4 },
+      },
+    });
+  });
 
   // course slider
   var swiper = new Swiper(".teachers__slider", {
