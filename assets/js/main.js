@@ -274,7 +274,7 @@
       },
     });
   });
-   $(document).ready(function () {
+  $(document).ready(function () {
     $(".testimonial__active-4").owlCarousel({
       loop: true,
       margin: 30,
@@ -388,6 +388,21 @@
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+  });
+
+  var swiper = new Swiper(".swiper-data", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    effect: "fade",
+    loop: true,
+    speed: 1000,
+    navigation: {
+      nextEl: ".rts__next",
+      prevEl: ".rts__prev",
+    },
+    autoplay: {
+      delay: "7000",
     },
   });
 
@@ -552,83 +567,83 @@
       .find(".hover__active")
       .removeClass("active");
   });
- 
 })(jQuery);
 //chart
-Highcharts.chart('placementChart', {
+Highcharts.chart("placementChart", {
+  title: {
+    text: "Average Salary Package",
+  },
+
+  accessibility: {
+    point: {
+      valueDescriptionFormat: "{xDescription}{separator}{value} million(s)",
+    },
+  },
+
+  xAxis: {
     title: {
-        text: 'Average Salary Package'
+      text: "Year",
     },
+    categories: [1995, 2000, 2005, 2010, 2015, 2020, 2023],
+  },
 
-    accessibility: {
-        point: {
-            valueDescriptionFormat:
-                '{xDescription}{separator}{value} million(s)'
-        }
-    },
-
-    xAxis: {
-        title: {
-            text: 'Year'
-        },
-        categories: [1995, 2000, 2005, 2010, 2015, 2020, 2023]
-    },
-
-    yAxis: {
-        type: 'logarithmic',
-        title: {
-            text: 'Number of Internet Users (in millions)'
-        }
-    },
-
-    tooltip: {
-        headerFormat: '<b>{series.name}</b><br />',
-        pointFormat: '{point.y} million(s)'
-    },
-
-    series: [{
-        name: 'Internet Users',
-        data: [16, 361, 1018, 2025, 3192, 4673, 5200],
-        color: 'var(--highcharts-color-1, #2caffe)'
-    }]
-});
-Highcharts.chart('placementChart2', {
+  yAxis: {
+    type: "logarithmic",
     title: {
-        text: 'Highest Salary Package'
+      text: "Number of Internet Users (in millions)",
     },
+  },
 
-    accessibility: {
-        point: {
-            valueDescriptionFormat:
-                '{xDescription}{separator}{value} million(s)'
-        }
+  tooltip: {
+    headerFormat: "<b>{series.name}</b><br />",
+    pointFormat: "{point.y} million(s)",
+  },
+
+  series: [
+    {
+      name: "Internet Users",
+      data: [16, 361, 1018, 2025, 3192, 4673, 5200],
+      color: "var(--highcharts-color-1, #2caffe)",
     },
-
-    xAxis: {
-        title: {
-            text: 'Year'
-        },
-        categories: [1995, 2000, 2005, 2010, 2015, 2020, 2023]
-    },
-
-    yAxis: {
-        type: 'logarithmic',
-        title: {
-            text: 'Number of Internet Users (in millions)'
-        }
-    },
-
-    tooltip: {
-        headerFormat: '<b>{series.name}</b><br />',
-        pointFormat: '{point.y} million(s)'
-    },
-
-    series: [{
-        name: 'Internet Users',
-        data: [16, 361, 1018, 2025, 3192, 4673, 5200],
-        color: 'var(--highcharts-color-1, #2caffe)'
-    }]
+  ],
 });
+Highcharts.chart("placementChart2", {
+  title: {
+    text: "Highest Salary Package",
+  },
 
+  accessibility: {
+    point: {
+      valueDescriptionFormat: "{xDescription}{separator}{value} million(s)",
+    },
+  },
+
+  xAxis: {
+    title: {
+      text: "Year",
+    },
+    categories: [1995, 2000, 2005, 2010, 2015, 2020, 2023],
+  },
+
+  yAxis: {
+    type: "logarithmic",
+    title: {
+      text: "Number of Internet Users (in millions)",
+    },
+  },
+
+  tooltip: {
+    headerFormat: "<b>{series.name}</b><br />",
+    pointFormat: "{point.y} million(s)",
+  },
+
+  series: [
+    {
+      name: "Internet Users",
+      data: [16, 361, 1018, 2025, 3192, 4673, 5200],
+      color: "var(--highcharts-color-1, #2caffe)",
+    },
+  ],
+});
 
 AOS.init();

@@ -64,4 +64,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const headings = document.querySelectorAll(".titleanimate-2");
+
+  headings.forEach((heading) => {
+    const split = new SplitType(heading, { types: "chars" });
+
+    gsap.from(split.chars, {
+      autoAlpha: 0,
+      yPercent: 150,
+      duration: 2,
+      ease: "power2",
+      stagger: {
+        each: 0.02,
+        from: "random",
+      },
+      scrollTrigger: {
+        trigger: heading,
+        start: "top 90%",
+        toggleActions: "play none none none",
+      },
+    });
+  });
+});
+
+
 locomotiveAnimation();
