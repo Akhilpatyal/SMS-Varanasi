@@ -90,4 +90,44 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// ✅ Register GSAP & ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+// ✅ Select all reveal containers
+const revealContainers = document.querySelectorAll("[data-image-reveal]");
+revealContainers.forEach((container) => {
+  const image = container.querySelector("img");
+
+  // ✅ Create a timeline for each container
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      start: "top 80%",      // adjust scroll start point
+      toggleActions: "play none none reset",
+    },
+  });
+
+  tl.set(container, { autoAlpha: 1 });
+
+  // Slide the container from left to right
+  tl.from(container, {
+    xPercent: -100,
+    duration: 1.5,
+    ease: "power2.out",
+  });
+
+  // Reveal the image in opposite direction
+  tl.from(
+    image,
+    {
+      xPercent: 100,
+      scale: 1.3,
+      duration: 1.5,
+      ease: "power2.out",
+    },
+    "<" // starts at same time as previous animation
+  );
+});
+
+
 locomotiveAnimation();

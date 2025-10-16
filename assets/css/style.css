@@ -1178,6 +1178,7 @@ input[type=color] {
 
 .breadcrumb__overlay {
   position: relative;
+  z-index: 2;
 }
 
 
@@ -12388,6 +12389,10 @@ h1 a {
   padding-bottom: 80px;
 }
 
+.pb-50 {
+  padding-bottom: 50px;
+}
+
 /* scroller */
 .table-responsive {
   overflow-x: auto;
@@ -13835,14 +13840,13 @@ h1 a {
 .brand-default.brand-style--2 {
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  display: -ms-grid;
-  display: grid
+  display: grid;
 }
 
 @media only screen and (max-width:575px) {
   .brand-default.brand-style--2 {
     -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -15266,7 +15270,8 @@ thead tr:first-child th:last-child {
 
   .fssai-section .section-heading .bg-text,
   .greenaudit .section-heading .bg-text,
-  .energyaudit .section-heading .bg-text,.iso .section-heading .bg-text {
+  .energyaudit .section-heading .bg-text,
+  .iso .section-heading .bg-text {
     font-size: 30px !important;
   }
 
@@ -15423,21 +15428,43 @@ thead tr:first-child th:last-child {
 .IsoCard {
   min-height: 100%;
   position: relative;
-  padding-top: 100px;
+  padding-top: 70px;
   overflow: hidden;
   background-color: #fdeeed;
-  
+
 }
+
 .IsoCard-2 {
   min-height: 100%;
   position: relative;
-  padding-top: 100px;
+  padding-top: 70px;
   overflow: hidden;
   background-color: #f5efff;
-  
 }
-.IsoCard-2:hover,.IsoCard:hover{
-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+.IsoCard-3 {
+  min-height: 100%;
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+  background-color: #effeee;
+
+}
+
+.IsoCard-4 {
+  min-height: 100%;
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+  background-color: #f5efff;
+
+}
+
+.IsoCard-2:hover,
+.IsoCard:hover,
+.IsoCard-3:hover,
+.IsoCard-4:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .isoCardimg {
@@ -15456,29 +15483,55 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: transform 0.8s ease-in-out;
 }
 
-.IsoCard:hover .isoCardimg {
-  transform: translate(-75%, -70%);
-  
+.IsoCard-3 .isoCardimg {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform: translate(-24%, -40%);
+  transition: transform 0.8s ease-in-out;
 }
+
+.IsoCard-4 .isoCardimg {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform: translate(-33%, -33%);
+  transition: transform 0.8s ease-in-out;
+}
+
+
+.IsoCard:hover .isoCardimg {
+  transform: translate(-75%, -65%);
+}
+
 .IsoCard-2:hover .isoCardimg-2 {
   transform: translate(-20%, -60%);
-  
+}
+
+.IsoCard-3:hover .isoCardimg {
+  transform: translate(-24%, -50%);
+}
+
+.IsoCard-4:hover .isoCardimg {
+  transform: translate(-40%, -51%);
 }
 
 .z-1 {
   z-index: 9;
 }
-.HandCradlingImg{
+
+.HandCradlingImg {
   width: 100%;
   height: 580px;
   object-fit: cover;
 }
-@media (max-width:780px){
-  .HandCradlingImg{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+
+@media (max-width:780px) {
+  .HandCradlingImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 /*  */
@@ -15490,26 +15543,146 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   font-weight: 400;
   line-height: 30px;
 }
+
 @media screen and (max-width: 1200px) {
   .about__description__text {
     margin-bottom: 60px !important;
   }
 }
+
 @media screen and (max-width: 992px) {
   .about__description__text {
     margin-left: 0;
   }
 }
+
 .about__description__text span {
   color: #262626;
 }
 
 .about__image img {
-    border-radius: 10px;
-    width: 100%;
-    height: 350px!important;
-    object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 350px !important;
+  object-fit: cover;
 }
-.shadow-1{
+
+.shadow-1 {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.facilityCampup {
+  position: relative;
+  z-index: 1;
+  /* ensure content stays above the circle */
+}
+
+.facilityCampup::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border: 120px solid transparent;
+  border-bottom-color: rgba(239, 125, 0, 0.08);
+  border-right-color: rgba(239, 125, 0, 0.08);
+  border-radius: 50%;
+  top: -300px;
+  left: -300px;
+  z-index: -1;
+  /* keeps it behind the main content */
+}
+
+.playfair-f {
+  font-family: "Playfair Display", serif;
+  color: #444;
+  font-size: 32px;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+
+.gridSection {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+/*  */
+.main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.bento {
+  margin-block: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 30rem;
+  gap: 1rem;
+}
+
+.bento-card {
+  inline-size: 100%;
+  background: center / cover;
+  border-radius: 1rem;
+
+  &:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 5;
+  }
+
+  &:nth-child(2),
+  &:nth-child(5) {
+    grid-row: span 2;
+  }
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    grid-row: span 3;
+  }
+}
+
+
+.bento-hover .bento-card {
+  transition: 500ms;
+
+  &:hover {
+    scale: 1.01;
+  }
+}
+
+.bento-hover:hover .bento-card:not(:hover) {
+  filter: saturate(50%) brightness(50%);
+}
+
+
+
+.bento-perspective {
+
+
+  transform: perspective(1000px) rotateY(12deg) scaleX(1.372);
+  transform-origin: left;
+}
+
+.ComputerCenter .extra p span {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.ComputerCenter .extra {
+  padding: 35px 20px;
+  background-color: #8c0017;
+  border-radius: 10px;
+}
+
+.ComputerCenter .extra p {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0px;
 }
