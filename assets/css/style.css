@@ -15644,7 +15644,6 @@ thead tr:first-child th:last-child {
   }
 }
 
-
 .bento-hover .bento-card {
   transition: 500ms;
 
@@ -15657,11 +15656,7 @@ thead tr:first-child th:last-child {
   filter: saturate(50%) brightness(50%);
 }
 
-
-
 .bento-perspective {
-
-
   transform: perspective(1000px) rotateY(12deg) scaleX(1.372);
   transform-origin: left;
 }
@@ -15685,4 +15680,389 @@ thead tr:first-child th:last-child {
   font-weight: 500;
   color: #fff;
   margin-bottom: 0px;
+}
+
+.facilityCampup p {
+  text-align: justify;
+}
+
+@media (max-width:780px) {
+  .bento {
+    margin-block: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) !important;
+    grid-template-rows: repeat(1, 0fr) !important;
+    height: 30rem;
+    gap: 1rem;
+  }
+
+  .playfair-f {
+    font-size: 30px;
+  }
+
+  .facilityCampup::before {
+    width: 610px;
+    height: 633px;
+  }
+}
+
+.mediaLabs h1 {
+  text-align: center;
+}
+
+.mediaLabs a img {
+  border-radius: 0px;
+  box-shadow: none;
+  width: 15px;
+  height: 15px;
+}
+
+.mediaLabs {
+  position: relative;
+}
+
+.puzzel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  opacity: 0.8;
+  transform: rotate(22deg);
+  animation: floatPuzzle 4s ease-in-out infinite;
+    transform-origin: center;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+@keyframes floatPuzzle {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(20deg) translateY(0);
+  }
+ 
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+.gradient-two{
+      background: linear-gradient(179deg, #9a0019, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.img-wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.scroll-grow-img {
+  display: block;
+  max-width: 100%;
+  transition: width 0.3s ease;
+}
+
+/*  */
+/*
+************
+*************************
+20. management
+******************************************************* 
+*************************************************************** */
+.ns-management-area {
+  overflow: hidden;
+}
+.ns-section ,.ns-section h2{
+  color: white;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1799px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .ns-management-area.pb-80 {
+    padding-bottom: 15px;
+  }
+}
+
+.ns-management-bg {
+  position: absolute;
+  right: 390px;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ns-management-bg {
+    right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .ns-management-bg {
+    right: 0;
+  }
+}
+
+.ns-management-head-icon {
+  position: absolute;
+  top: 0;
+  right: 188px;
+  background: #ffab17;
+  width: 190px;
+  height: 180px;
+  display: grid;
+  place-items: center;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .ns-management-head-icon {
+    display: none;
+  }
+}
+
+.ns-management-img {
+  position: absolute;
+  right: 0;
+  top: 180px;
+  border: 10px solid #fff;
+  border-right: 0;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1799px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ns-management-img {
+    width: 44.8%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .ns-management-img {
+    display: none;
+  }
+}
+.ns-management-content .DigitalHarbour
+{
+  color: #fff;
+  padding-top: 15px;
+}
+.ns-management-img-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  height: 160px;
+  display: grid;
+  place-items: center;
+  background: #ffab17;
+}
+
+.ns-management-content-info h5 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.ns-management-content-info p {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.ns-management-content ul li {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 25px;
+}
+.ns-management-content ul li:last-child {
+  padding-bottom: 0;
+}
+.ns-management-content ul li:last-child::after {
+  position: absolute;
+  left: 5px;
+  bottom: -5px;
+  content: "";
+  background-image: url("../img/management/arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 18px;
+  z-index: 9;
+}
+.ns-management-content ul li::before {
+  position: absolute;
+  content: "";
+  left: 11px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #848484;
+  z-index: -1;
+}
+
+.ns-management-content-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  flex: 0 0 25px;
+  background-color: #ffab17;
+  border-radius: 50%;
+  line-height: 25px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+.ns-management-list {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .ns-management-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .ns-management-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.ns-management-list-item {
+  min-width: 160px;
+  background-color: #fefefe;
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
+.ns-management-list-item span {
+  width: 70px;
+  height: 70px;
+  background-color: #242424;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 29px;
+  color: #fff;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.ns-management-list-item h5 {
+  font-size: 22px;
+  margin-bottom: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.ns-management-list-item {
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.ns-management-list-item:hover {
+  background-color: #ffab17;
+  border-color: #ffab17;
+}
+.ns-management-list-item:hover span {
+  color: #ffab17;
+  background-color: #fff;
+}
+.ns-management-list-item:hover h5 {
+  color: #fff;
+}
+
+.ns-management-area-6 {
+  background-color: #2d2d36;
+  overflow: hidden;
+}
+
+.ns-management-bg-6 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ns-management-bg-6 {
+    right: -200px;
+  }
+}
+
+.ns-management-img-6 {
+  position: relative;
+  margin-right: -75px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .ns-management-img-6 {
+    margin-right: 0;
+  }
+}
+
+.ns-management-img-6 .ns-management-main-img {
+  border: 8px solid #fff;
+}
+
+.ns-management-head-icon-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffab17;
+  width: 140px;
+  height: 135px;
+  display: grid;
+  place-items: center;
+}
+.ns-management-head-icon-6 img {
+  width: 50px;
+}
+@media (max-width: 767px) {
+  .ns-management-head-icon-6 {
+    width: 30%;
+    height: 30%;
+  }
+  .ns-management-head-icon-6 img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .ns-management-head-icon-6 {
+    width: 140px;
+    height: 135px;
+  }
+}
+
+.ns-management-img-icon-6 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  background: #292724;
+}
+.ns-management-img-icon-6 img {
+  width: 50px;
+}
+@media (max-width: 767px) {
+  .ns-management-img-icon-6 {
+    width: 30%;
+    height: 30%;
+  }
+  .ns-management-img-icon-6 img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .ns-management-img-icon-6 {
+    width: 120px;
+    height: 120px;
+  }
 }

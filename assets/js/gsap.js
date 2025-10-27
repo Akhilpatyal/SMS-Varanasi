@@ -130,4 +130,24 @@ revealContainers.forEach((container) => {
 });
 
 
+// image zoom
+gsap.utils.toArray(".scroll-grow-img").forEach((img) => {
+  // Set initial state
+  gsap.set(img, { width: "70%" });
+
+  gsap.to(img, {
+    width: "100%",
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: img,
+      start: "top 80%",   // animation starts when image enters viewport
+      end: "top 20%",     // animation ends when you scroll further up
+      scrub: true,        // smooth scroll-based transition
+      toggleActions: "play none none reverse", // reverses on scroll up
+    },
+  });
+});
+
+
 locomotiveAnimation();
