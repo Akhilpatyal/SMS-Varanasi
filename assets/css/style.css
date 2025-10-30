@@ -12164,7 +12164,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .items-top h3 {
   color: white;
-  z-index: 99;
+  z-index: 1;
 }
 
 .items-bottom {
@@ -14262,10 +14262,6 @@ h1 a {
   opacity: 1;
 }
 
-.team-card-items:hover .team-image h3 {
-  opacity: 1;
-  transform: translate(-50%, 0);
-}
 
 /*  */
 .page-nav-wrap {
@@ -16317,4 +16313,14 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .ns-blog-bg-shape-4 {
     right: 0;
     top: 0;
+}
+/* image side */
+.imgsize1{
+width: 576px;
+}
+@media (max-width:780px){
+  .imgsize1{
+  width: 100%;
+  }
+  
 }
