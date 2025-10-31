@@ -150,4 +150,6 @@ gsap.utils.toArray(".scroll-grow-img").forEach((img) => {
 });
 
 
+
+
 locomotiveAnimation();
