@@ -1546,9 +1546,9 @@ input[type=color] {
   stroke: var(--tp-theme-3);
 }
 
-.header__login {
-  /* header login 2 */
-}
+
+/* header login 2 */
+
 
 .header__login a {
   color: var(--tp-common-black);
@@ -3382,7 +3382,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   -ms-box-shadow: 0px 1px 2px rgba(26, 31, 35, 0.07);
   -o-box-shadow: 0px 1px 2px rgba(26, 31, 35, 0.07);
   box-shadow: 0px 1px 2px rgba(26, 31, 35, 0.07);
-
+  height: -webkit-fill-available;
 }
 
 .course__item:hover {
@@ -13833,7 +13833,7 @@ h1 a {
 .brand-default .brand a:hover img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  opacity: 1
+  opacity: 1;
 }
 
 .brand-default.brand-style--2 {
@@ -16344,6 +16344,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   line-height: 36px;
   font-family: math;
 }
+
 .AlumniTopSection p {
   font-size: 20px;
   text-align: justify;
@@ -16404,16 +16405,19 @@ a.button {
   padding: 10px 18px;
   font-size: 18px;
   font-weight: 600;
-  border-radius: 6px; /* softer corners */
+  border-radius: 6px;
+  /* softer corners */
   background-color: rgba(49, 49, 49, 0.8);
   color: #fff;
   text-decoration: none;
-  transition: all 0.4s ease; /* smoother */
+  transition: all 0.4s ease;
+  /* smoother */
 }
 
 a.button:hover {
   background: linear-gradient(329deg, #9a0019, #000000 100%);
-  transform: translateY(-2px); /* subtle lift effect */
+  transform: translateY(-2px);
+  /* subtle lift effect */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -16581,26 +16585,31 @@ a.button:hover {
   z-index: -2;
   height: 100%;
 }
+
 @media only screen and (min-width: 1600px) and (max-width: 1799px) {
   .ns-choose-bg {
     right: -80px;
   }
 }
+
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .ns-choose-bg {
     right: -175px;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ns-choose-bg {
     right: -175px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ns-choose-bg {
     right: -300px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ns-choose-bg {
     right: -203px;
@@ -16609,9 +16618,10 @@ a.button:hover {
     height: 57.4%;
   }
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
   .ns-choose-bg {
-   height:auto;
+    height: auto;
   }
 }
 
@@ -16622,16 +16632,19 @@ a.button:hover {
   gap: 20px;
   margin-bottom: 30px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ns-choose-contain-qoute {
     padding: 20px 25px 20px 15px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ns-choose-contain-qoute {
     padding: 20px 50px 20px 15px;
   }
 }
+
 @media (max-width: 767px) {
   .ns-choose-contain-qoute {
     padding: 20px 25px 20px 25px;
@@ -16639,6 +16652,7 @@ a.button:hover {
     flex-direction: column;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .ns-choose-contain-qoute {
     padding: 20px 40px 20px 20px;
@@ -16668,9 +16682,11 @@ a.button:hover {
   font-size: 17px;
   color: #7d7f85;
 }
+
 .ns-choose-contain-list ul li:last-child {
   margin-bottom: 0;
 }
+
 @media (max-width: 767px) {
   .ns-choose-contain-list ul li {
     font-size: 15px;
@@ -16684,9 +16700,11 @@ a.button:hover {
 .ns-choose-contain-list {
   margin-bottom: 50px;
 }
-.ns-section-title{
+
+.ns-section-title {
   color: #000000;
 }
+
 .ns-choose-img {
   width: 545px;
   height: 545px;
@@ -16697,18 +16715,21 @@ a.button:hover {
   margin-left: auto;
   background-size: cover;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ns-choose-img {
     width: 445px;
     height: 445px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ns-choose-img {
     margin: 0 auto;
     margin-bottom: 110px;
   }
 }
+
 @media (max-width: 767px) {
   .ns-choose-img {
     width: 290px;
@@ -16718,24 +16739,28 @@ a.button:hover {
     margin-bottom: 35px;
   }
 }
+
 @media (min-width: 370px) and (max-width: 399px) {
   .ns-choose-img {
     width: 325px;
     height: 325px;
   }
 }
+
 @media (min-width: 400px) and (max-width: 479px) {
   .ns-choose-img {
     width: 365px;
     height: 365px;
   }
 }
+
 @media (min-width: 480px) and (max-width: 575px) {
   .ns-choose-img {
     width: 445px;
     height: 445px;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .ns-choose-img {
     width: 480px;
@@ -16758,21 +16783,25 @@ a.button:hover {
   right: 65px;
   transform: translateY(-50%);
 }
+
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .ns-choose-shape.choose-shape-1 {
     right: 20px;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ns-choose-shape.choose-shape-1 {
     right: 20px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ns-choose-shape.choose-shape-1 {
     display: none;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ns-choose-shape.choose-shape-1 {
     display: none;
@@ -16783,23 +16812,27 @@ a.button:hover {
   top: 70px;
   right: 315px;
 }
+
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .ns-choose-shape.choose-shape-2 {
     top: 50px;
     right: 120px;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ns-choose-shape.choose-shape-2 {
     top: 50px;
     right: 120px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ns-choose-shape.choose-shape-2 {
     right: 100px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ns-choose-shape.choose-shape-2 {
     right: 80px;
@@ -16810,24 +16843,28 @@ a.button:hover {
   right: 195px;
   bottom: 70px;
 }
+
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .ns-choose-shape.choose-shape-3 {
     right: 70px;
     bottom: 40px;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ns-choose-shape.choose-shape-3 {
     right: 70px;
     bottom: 40px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ns-choose-shape.choose-shape-3 {
     right: 60px;
     bottom: 40px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ns-choose-shape.choose-shape-3 {
     right: 40px;
@@ -16837,24 +16874,31 @@ a.button:hover {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   .ns-section-text.mr-70,
   .ns-choose-contain.mr-70 {
     margin-right: 120px;
   }
 }
+
 @media (max-width: 767px) {
+
   .ns-section-text.mr-70,
   .ns-choose-contain.mr-70 {
     margin-right: 0;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
   .ns-section-text.mr-70,
   .ns-choose-contain.mr-70 {
     margin-right: 45px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
   .ns-choose-wrap.pb-115 {
     padding-bottom: 0;
   }
@@ -16875,7 +16919,7 @@ a.button:hover {
   background: #f7f9fc;
   padding: 20px 30px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-card h2 {
@@ -16911,4 +16955,283 @@ a.button:hover {
   margin: 3px 0 0;
   color: #333;
   font-size: 15px;
+}
+
+/*  */
+.course__item {
+  overflow: hidden;
+}
+
+.course__item .ns-service-shape-21,
+.course__item .ns-service-shape-22 {
+  opacity: 0;
+}
+
+.course__item .ns-service-shape-1 {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #ffab17;
+  border-radius: 20%;
+  opacity: 0.62;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.course__item:hover .ns-service-shape-1 {
+  width: 80px;
+  height: 80px;
+}
+
+.course__item:hover .ns-service-shape-2 {
+  width: 80px;
+  height: 80px;
+}
+
+.course__item .ns-service-shape-2 {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  right: -35px;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #242424;
+  border-radius: 20%;
+  opacity: 0.62;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+
+
+/* *********************************  */
+/* @property --angle-1 {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -75deg;
+}
+
+@property --angle-2 {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: -45deg;
+}
+
+:root {
+  --anim--hover-time: 400ms;
+  --anim--hover-ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Button container */
+/* .button-wrap {
+  position: relative;
+  display: inline-block;
+  border-radius: 999vw;
+  background: transparent;
+  pointer-events: none;
+  transition: all var(--anim--hover-time) var(--anim--hover-ease);
+} */
+
+/* .button-shadow {
+  --shadow-cuttoff-fix: 2em;
+  position: absolute;
+  width: calc(100% + var(--shadow-cuttoff-fix));
+  height: calc(100% + var(--shadow-cuttoff-fix));
+  top: calc(0% - var(--shadow-cuttoff-fix) / 2);
+  left: calc(0% - var(--shadow-cuttoff-fix) / 2);
+  filter: blur(6px);
+  pointer-events: none;
+} */
+
+/* .button-shadow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999vw;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+  top: calc(var(--shadow-cuttoff-fix) - 0.5em);
+  left: calc(var(--shadow-cuttoff-fix) - 0.875em);
+  opacity: 1;
+  transition: all var(--anim--hover-time) var(--anim--hover-ease);
+} */
+
+/* The link styled as button */
+/* .button-wrap a {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  pointer-events: auto;
+  border-radius: 999vw;
+  background: linear-gradient(-75deg, rgba(255,255,255,0.05), rgba(255,255,255,0.2));
+  backdrop-filter: blur(4px);
+  padding: 0.75em 1.75em;
+  box-shadow:
+    inset 0 0.125em 0.125em rgba(0,0,0,0.05),
+    inset 0 -0.125em 0.125em rgba(255,255,255,0.5),
+    0 0.25em 0.125em -0.125em rgba(0,0,0,0.2);
+  transition: all var(--anim--hover-time) var(--anim--hover-ease);
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+} */
+*/
+/* Glow border */
+/* .button-wrap a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999vw;
+  background: conic-gradient(
+      from var(--angle-1) at 50% 50%,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0) 5% 40%,
+      rgba(0,0,0,0.5) 50%,
+      rgba(0,0,0,0) 60% 95%,
+      rgba(0,0,0,0.5)
+    ),
+    linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  padding: 2px;
+  box-sizing: border-box;
+  transition: all var(--anim--hover-time) var(--anim--hover-ease),
+              --angle-1 500ms ease;
+} */
+
+/* Hover animation */
+.button-wrap a:hover::after {
+  --angle-1: -125deg;
+}
+
+.button-wrap a:hover {
+  transform: scale(0.975);
+}
+
+/* Icon + Text inside */
+.button-wrap a span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.button-wrap a svg {
+  width: 14px;
+  height: 16px;
+  stroke: #333;
+}
+
+/* Shadow hover */
+.button-wrap:has(a:hover) .button-shadow {
+  filter: blur(3px);
+}
+
+.alumniRegistration {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  min-height: 220px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.alumniRegistration:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.alumniRegistration img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  transition: opacity 0.4s ease;
+}
+
+.alumniRegistration:hover img {
+  opacity: 0.5;
+}
+
+.alumniRegistration .content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 20px;
+}
+
+.alumniRegistration h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.alumniRegistration a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0088cc;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.alumniRegistration a:hover {
+  background-color: #007ab8;
+  transform: scale(1.05);
+}
+
+.alumniRegistration i {
+  font-size: 1.1rem;
+}
+
+.googleBtn {
+  background: linear-gradient(135deg, #4285F4, #30bb56, #ffc92c, #ff6b5f);
+}
+
+.commendations span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.commendations p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.commendations address p {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.alumniMeetCard img {
+ border-radius: 10px;
 }
