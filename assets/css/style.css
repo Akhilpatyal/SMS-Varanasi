@@ -15861,6 +15861,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .ns-management-content .DigitalHarbour {
   color: #fff;
   padding-top: 15px;
+  text-align: justify;
 }
 
 .ns-management-img-icon {
@@ -16330,12 +16331,6 @@ only screen and (min-width: 768px) and (max-width: 991px),
   width: 576px;
 }
 
-@media (max-width:780px) {
-  .imgsize1 {
-    width: 100%;
-  }
-
-}
 
 
 .BooksTopSection p {
@@ -16344,7 +16339,6 @@ only screen and (min-width: 768px) and (max-width: 991px),
   line-height: 36px;
   font-family: math;
 }
-
 .AlumniTopSection p {
   font-size: 20px;
   text-align: justify;
@@ -16356,6 +16350,22 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .textDesign1 {
   color: #910018;
   font-size: 30px;
+}
+
+@media (max-width:780px) {
+  .imgsize1 {
+    width: 100%;
+  }
+  .BooksTopSection p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 36px;
+    font-family: math;
+  }
+.textDesign1 {
+  color: #910018;
+  font-size: 22px;
+}
 }
 
 .bookcard {
@@ -17014,101 +17024,6 @@ a.button:hover {
 
 
 /* *********************************  */
-/* @property --angle-1 {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: -75deg;
-}
-
-@property --angle-2 {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: -45deg;
-}
-
-:root {
-  --anim--hover-time: 400ms;
-  --anim--hover-ease: cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-/* Button container */
-/* .button-wrap {
-  position: relative;
-  display: inline-block;
-  border-radius: 999vw;
-  background: transparent;
-  pointer-events: none;
-  transition: all var(--anim--hover-time) var(--anim--hover-ease);
-} */
-
-/* .button-shadow {
-  --shadow-cuttoff-fix: 2em;
-  position: absolute;
-  width: calc(100% + var(--shadow-cuttoff-fix));
-  height: calc(100% + var(--shadow-cuttoff-fix));
-  top: calc(0% - var(--shadow-cuttoff-fix) / 2);
-  left: calc(0% - var(--shadow-cuttoff-fix) / 2);
-  filter: blur(6px);
-  pointer-events: none;
-} */
-
-/* .button-shadow::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 999vw;
-  background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.1));
-  top: calc(var(--shadow-cuttoff-fix) - 0.5em);
-  left: calc(var(--shadow-cuttoff-fix) - 0.875em);
-  opacity: 1;
-  transition: all var(--anim--hover-time) var(--anim--hover-ease);
-} */
-
-/* The link styled as button */
-/* .button-wrap a {
-  all: unset;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  pointer-events: auto;
-  border-radius: 999vw;
-  background: linear-gradient(-75deg, rgba(255,255,255,0.05), rgba(255,255,255,0.2));
-  backdrop-filter: blur(4px);
-  padding: 0.75em 1.75em;
-  box-shadow:
-    inset 0 0.125em 0.125em rgba(0,0,0,0.05),
-    inset 0 -0.125em 0.125em rgba(255,255,255,0.5),
-    0 0.25em 0.125em -0.125em rgba(0,0,0,0.2);
-  transition: all var(--anim--hover-time) var(--anim--hover-ease);
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-} */
-*/
-/* Glow border */
-/* .button-wrap a::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 999vw;
-  background: conic-gradient(
-      from var(--angle-1) at 50% 50%,
-      rgba(0,0,0,0.5),
-      rgba(0,0,0,0) 5% 40%,
-      rgba(0,0,0,0.5) 50%,
-      rgba(0,0,0,0) 60% 95%,
-      rgba(0,0,0,0.5)
-    ),
-    linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5));
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  padding: 2px;
-  box-sizing: border-box;
-  transition: all var(--anim--hover-time) var(--anim--hover-ease),
-              --angle-1 500ms ease;
-} */
 
 /* Hover animation */
 .button-wrap a:hover::after {
@@ -17228,10 +17143,136 @@ a.button:hover {
 }
 
 .commendations address p {
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
   font-size: 14px;
 }
 
+.alumniMeetCard {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 350px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.alumniMeetCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
 .alumniMeetCard img {
- border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  filter: brightness(65%);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.alumniMeetCard:hover img {
+  transform: scale(1.08);
+  filter: brightness(80%);
+}
+
+/* Subtle dark gradient overlay for better text contrast */
+.alumniMeetCard .overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.alumniMeetCard .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.alumniMeetCard .content h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.alumniMeetCard .content p {
+  margin-bottom: 10px;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.alumniMeetCard .content button {
+  color: white;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  padding: 8px 20px;
+  background: linear-gradient(36deg, #8d0017, #190004 50%, #000000 100%);
+  background-size: 200% 100%;
+  background-position: left center;
+  transition: background-position 0.6s ease-in-out, transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.alumniMeetCard .content button:hover {
+  background-position: right center;
+  transform: scale(1.05);
+}
+
+.alumni-pgdm .alumni-years {
+  text-align: center;
+  background: linear-gradient(329deg, #9a0019, #000000 90%);
+  padding: 20px 30px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.alumni-pgdm .alumni-years h2 {
+  color: white;
+  position: relative;
+  /* ensure it's above the image */
+  z-index: 20;
+  transition: transform 0.4s ease-in-out;
+}
+
+.alumni-pgdm .alumni-years img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: 1;
+  object-fit: cover;
+  z-index: 9;
+  transition: transform 0.6s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* Hover effect */
+.alumni-pgdm .alumni-years:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px;
+  transform: translateY(-12px);
+}
+
+/* Optional: slight scale effect on hover */
+.alumni-pgdm .alumni-years:hover img {
+  transform: scale(1.1);
+  /* zooms slightly */
+  opacity: 0.15;
+}
+
+.alumni-pgdm .alumni-years:hover h2 {
+  transform: translateY(-2px);
 }
