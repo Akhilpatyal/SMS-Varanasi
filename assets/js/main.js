@@ -646,4 +646,7 @@ Highcharts.chart("placementChart2", {
   ],
 });
 
+
+
+
 AOS.init();
